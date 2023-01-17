@@ -35,7 +35,7 @@ const EUR = () => {
             result.textContent = 'Username must contain at least 3 characters';
             //alert('Username must contain at least 3 characters');
         } else {
-            result.textContent = inputnum + ' Idk do you live in Monaco?';
+            result.textContent = inputnum + ' Bitcoins, save your money for gas, russia is being a dick.';
             //alert(nameField);
         }
         }

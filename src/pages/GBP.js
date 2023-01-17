@@ -33,7 +33,7 @@ const GBP = () => {
             result.textContent = 'Username must contain at least 3 characters';
             //alert('Username must contain at least 3 characters');
         } else {
-            result.textContent = inputnum + 'Bitcoins cost more than you can afford';
+            result.textContent = inputnum + 'Bitcoins, honestly you live in England, your economy is down the drain do not look for crypto.';
             //alert(nameField);
         }
         }
