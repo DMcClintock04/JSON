@@ -14,7 +14,7 @@ return (
     <Navbar />
     <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/about' element={<About/>} />
+        <Route path='/About' element={<About/>} />
         <Route path='/USD' element={<USD/>} />
         <Route path='/GBP' element={<GBP/>} />
         <Route path='/EUR' element={<EUR/>} />

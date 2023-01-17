@@ -22,10 +22,37 @@ const EUR = () => {
             .catch(err=>{
                 console.log(err);
             })
+
+            var subButton = document.getElementById("subButton");
+        subButton.addEventListener("click", calculate, false);
+    
+    function calculate() {
+        var inputnum = document.getElementById('inum').value;
+        var result = document.getElementById('result');
+        
+        
+        if (inputnum.length < 1) {
+            result.textContent = 'Username must contain at least 3 characters';
+            //alert('Username must contain at least 3 characters');
+        } else {
+            result.textContent = inputnum + ' Idk do you live in Monaco?';
+            //alert(nameField);
+        }
+        }
     },[])
     return(
         <>
-            <h1>EUR: {Data.Rate}</h1>
+             <h1>EUR: {Data.Rate}</h1>
+            <form method="get">
+                <label for="inum">Number of Bitcoin:</label>
+                <input type="text" id="inum" name="input_number"/>
+            <div class='form-sub'>
+                <button id='subButton' type='button'>Calculate!</button>
+            </div>
+            </form>
+            <div>
+                <p id='result'></p>
+            </div>
         </>
     )
 };
